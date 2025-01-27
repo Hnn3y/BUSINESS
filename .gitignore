@@ -1,0 +1,22 @@
+# Node modules (never commit these)
+node_modules/
+
+# Logs
+*.log
+
+# Build/Generated files
+dist/
+public/build/
+
+# Environment files (sensitive data)
+.env
+
+# Cache
+*.cache
+
+# OS-specific files
+.DS_Store
+
+# Editor/IDE settings
+.vscode/
+.idea/

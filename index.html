@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 elements">
     <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4 elements">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <img src="logo.png" alt="Logo" class="h-12">
@@ -27,7 +27,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 element" data-aos="fade-up">
+    <section class="pt-32 pb-20 px-4 elements" data-aos="fade-up">
         <div class="max-w-7xl mx-auto text-center">
             <h1 class="text-5xl font-bold mb-6">Building Your Future,<br>One Brick at a Time</h1>
             <p class="text-xl text-gray-600 mb-8">Your Trusted Partner in Construction Materials and Expert Building Solutions</p>
@@ -37,25 +37,64 @@
         </div>
     </section>
 
+    <section class="py-16 bg-gray-100 px-4 elements" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-left">Long heading is what you see here in this feature section</h2>
+                <p class="text-gray-600 mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-lg font-semibold">Subheading one</h3>
+                        <p class="text-gray-600">Suspendisse varius enim in eros.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">Subheading two</h3>
+                        <p class="text-gray-600">Suspendisse varius enim in eros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-300 h-64 flex items-center justify-center rounded-xl" data-aos="fade-left">
+                <img src="placeholder-image.png" alt="Feature Image" class="h-full object-cover">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="py-16 bg-gray-800 text-white px-4 rounded-xl elements" data-aos="fade-right">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 rounded-xl">Medium length heading goes here</h2>
+            <p class="text-gray-400 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Button</button>
+                <button class="bg-gray-700 text-white px-6 py-3 rounded hover:bg-gray-600 transition">Button</button>
+            </div>
+        </div>
+    </section>
+    
+
     <!-- Order Supplies Section -->
-    <section id="order" class="py-16 bg-white px-4" data-aos="fade-up-right">
+    <section id="order" class="py-16 bg-white px-4 elements" data-aos="fade-up-right">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">Order Building Supplies</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Materials Selection -->
-                <div class="bg-gray-50 p-6 rounded-lg">
+                <div class="bg-gray-50 p-6 rounded-xl element">
                     <h3 class="text-xl font-semibold mb-6">Select Materials</h3>
                     <div id="materialList" class="space-y-4">
                         <!-- Material items will be populated by JavaScript -->
                     </div>
-                    <button onclick="addToOrder()" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                    <button onclick="addToOrder()" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 element">
                         Add Another Material
                     </button>
                 </div>
 
                 <!-- Order Form -->
-                <div class="bg-gray-50 p-6 rounded-lg">
+                <div class="bg-gray-50 p-6 rounded-lg elements">
                     <form id="orderForm" class="space-y-4">
                         <div>
                             <label class="block text-gray-700 mb-2">Full Name</label>
@@ -81,26 +120,23 @@
         </div>
     </section>
 
-    <footer>
-        <div class="flex">
-            <div class=" items-center">            
-                <h2>Join our newsletter</h2>
-                <p>Lorem ipsum dolor, sit 
-                    amet consectetur adipisicing elit.
-                    Aspernatur dolorum libero quaerat repellat ea 
-                    tempore necessitatibus autem sequi quod modi, iure 
-                    repudiandae, adipisci aut alias asperiores cupiditate accusamus debitis in!</p>
+    <footer class="bg-gray-100 py-16 elements rounded-xl" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Join Our Newsletter</h3>
+                <p class="text-gray-600">Stay updated with the latest building materials and solutions.</p>
             </div>
-            <div class="bg-blue-700">
-                <form id="" class="space-y-4">
-                    <div>
-                        <label class="block ">Enter Email</label>
-                        <input type="text" class="w-full" required>
-                    </div>
+            <div>
+                <form class="flex space-x-4">
+                    <input type="email" placeholder="Enter your email" class="w-full p-3 border rounded-xl" required>
+                    <button class="bg-blue-600 text-white px-6 rounded hover:bg-blue-700 rounded-lg">Subscribe</button>
                 </form>
+                <p class="text-gray-600">By Subscribing you agree with our <a href="#" class="text-blue-500 hover:underline">
+                    Privacy Policy</a></p>
             </div>
         </div>
     </footer>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
