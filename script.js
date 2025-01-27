@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const materialList = document.getElementById('materialList');
     materials.forEach(material => {
         const div = document.createElement('div');
-        div.className = 'flex items-center justify-between bg-white p-3 rounded';
+        div.className = 'flex items-center justify-between bg-white p-3 rounded-xl';
         div.innerHTML = `
             <span>${material.name}</span>
             <div class="flex items-center gap-4">
-                <input type="number" min="1" value="1" class="w-20 p-1 border rounded quantity">
-                <button onclick="addMaterial('${material.id}')" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                <input type="number" min="1" value="1" class="w-10 p-1 border rounded-xl quantity">
+                <button onclick="addMaterial('${material.id}')" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
                     Add
                 </button>
             </div>
