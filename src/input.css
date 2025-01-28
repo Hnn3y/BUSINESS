@@ -1,11 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* AOS animations */
-@import "aos/dist/aos.css";
-
-
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+@import "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css";
 
 body{
     background: linear-gradient(to right, #DD88CF, #4B164C);
@@ -26,3 +21,6 @@ body{
 .element{
     background: linear-gradient(to right, #DD88CF,#DD88CF, #DD88CF, #4B164C );
 }
+/* Add Tailwind and AOS script tags */
+
+
